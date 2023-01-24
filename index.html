@@ -1,21 +1,108 @@
 <!DOCTYPE html>
-<html lang="en" class="font-publicSans">
+<html lang="en" class="overflow-hidden font-publicSans">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Easybank landing page</title>
     <link rel="stylesheet" href="./main.css" />
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <h1
-      class="text-xl text-darkBlue md:bg-pink-300 xl:bg-yellow-200 2xl:bg-green-400"
+    <!-- header section  -->
+    <header
+      class="px flex items-center justify-center px-[10%] py-6 md:justify-between"
     >
-      Hello
-    </h1>
-    <img src="./images/bg-intro-desktop.svg" alt="" />
-    <!-- Home About Contact Blog Careers Request Invite Next generation digital
-    banking Take your financial life online. Your Easybank account will be a
-    one-stop-shop for spending, saving, budgeting, investing, and much more.
+      <div class="logo">
+        <a href="">
+          <img src="./images/logo.svg" alt="logo" />
+        </a>
+      </div>
+      <nav class="md:flex md:flex-row">
+        <li class="font-md mr-6 list-none text-grayishBlue hover:text-darkBlue">
+          <a href="#">Home</a>
+        </li>
+        <li
+          class="mr-6 list-none font-normal text-grayishBlue hover:text-darkBlue"
+        >
+          <a href="#">About</a>
+        </li>
+        <li
+          class="mr-6 list-none font-normal text-grayishBlue hover:text-darkBlue"
+        >
+          <a href="#">Contact</a>
+        </li>
+        <li
+          class="mr-6 list-none font-normal text-grayishBlue hover:text-darkBlue"
+        >
+          <a href="#">Blog</a>
+        </li>
+        <li class="list-none font-normal text-grayishBlue hover:text-darkBlue">
+          <a href="#">Careers</a>
+        </li>
+      </nav>
+      <button class="hamburger md:hidden">
+        <img
+          src="./images/icon-hamburger.svg"
+          class="w-full"
+          alt="hamburger-icon"
+          id="toggle-btn"
+        />
+      </button>
+      <a
+        href="#"
+        class="hidden rounded-[30px] border-none bg-gradient-to-r from-limeGreen to-brightCyan px-10 py-3 font-bold text-white outline-none md:block"
+        >Request invite</a
+      >
+    </header>
+
+    <!-- hero section starts -->
+    <!-- -------------------------------------------------------------- -->
+    <main>
+      <section
+        class="hero-section flex flex-col items-center md:flex-row-reverse md:gap-16 md:pl-[10%]"
+      >
+        <!-- image box -->
+        <div class="hero-img-box relative overflow-hidden">
+          <picture class="w-full">
+            <source srcset="bg-intro-desktop.svg" media="(min-width: 768px)" />
+
+            <img
+              src="./images/bg-intro-mobile.svg"
+              class="w-full"
+              alt="bg-img"
+            />
+          </picture>
+          <img
+            src="./images/image-mockups.png"
+            class="absolute top-[-31.5%] right-0"
+            alt="mobile-mockup"
+          />
+        </div>
+        <!-- hero text box -->
+        <div
+          class="hero-text-box -mt-10 flex flex-col items-center px-4 md:items-start"
+        >
+          <h1
+            class="mb-6 text-center text-4xl text-darkBlue md:text-left md:text-6xl"
+          >
+            Next generation digital banking
+          </h1>
+          <p
+            class="mb-10 text-center text-base text-grayishBlue md:text-left md:text-xl"
+          >
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </p>
+          <a
+            href="#"
+            class="rounded-[30px] border-none bg-gradient-to-r from-limeGreen to-brightCyan px-12 py-3 text-white outline-none"
+            >Request invite</a
+          >
+        </div>
+      </section>
+    </main>
+    <!-- Home About Contact Blog Careers Request Invite  
     Request Invite Why choose Easybank? We leverage Open Banking to turn your
     bank account into your financial hub. Control your finances like never
     before. Online Banking Our modern web and mobile applications allow you to

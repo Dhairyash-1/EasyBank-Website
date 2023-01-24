@@ -6,6 +6,7 @@
 
 Thanks for checking out this front-end coding challenge.
 
+[Live Development](https://dhairyash-1.github.io/EasyBank-Website/) challenges help you improve your coding skills by building realistic projects.
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
 **To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
