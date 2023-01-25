@@ -8,38 +8,48 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <!-- header section  -->
-    <header
-      class="px flex items-center justify-center px-[10%] py-6 md:justify-between"
+    <!-- navigation menu  -->
+    <nav
+      class="relative flex h-16 items-center justify-between px-[6%] md:static"
     >
+      <!-- navbar logo -->
       <div class="logo">
         <a href="">
           <img src="./images/logo.svg" alt="logo" />
         </a>
       </div>
-      <nav class="md:flex md:flex-row">
-        <li class="font-md mr-6 list-none text-grayishBlue hover:text-darkBlue">
+      <!-- navigation links -->
+      <ul
+        id="nav-links"
+        class="absolute top-[125%] right-[50%] z-10 hidden w-[90%] translate-x-2/4 rounded-md bg-white text-center md:static md:flex md:w-auto md:translate-x-0 md:items-center md:bg-transparent"
+      >
+        <li
+          class="font-md my-4 list-none text-darkBlue hover:text-darkBlue md:my-0 md:mr-6 md:text-grayishBlue"
+        >
           <a href="#">Home</a>
         </li>
         <li
-          class="mr-6 list-none font-normal text-grayishBlue hover:text-darkBlue"
+          class="mb-4 list-none font-normal text-darkBlue hover:text-darkBlue md:mb-0 md:mr-6 md:text-grayishBlue"
         >
           <a href="#">About</a>
         </li>
         <li
-          class="mr-6 list-none font-normal text-grayishBlue hover:text-darkBlue"
+          class="mb-4 list-none font-normal text-darkBlue hover:text-darkBlue md:mb-0 md:mr-6 md:text-grayishBlue"
         >
           <a href="#">Contact</a>
         </li>
         <li
-          class="mr-6 list-none font-normal text-grayishBlue hover:text-darkBlue"
+          class="mb-4 list-none font-normal text-darkBlue hover:text-darkBlue md:mb-0 md:mr-6 md:text-grayishBlue"
         >
           <a href="#">Blog</a>
         </li>
-        <li class="list-none font-normal text-grayishBlue hover:text-darkBlue">
+        <li
+          class="mb-4 list-none font-normal text-darkBlue hover:text-darkBlue md:mb-0 md:text-grayishBlue"
+        >
           <a href="#">Careers</a>
         </li>
-      </nav>
+      </ul>
+      <!-- hamburger -->
       <button class="hamburger md:hidden">
         <img
           src="./images/icon-hamburger.svg"
@@ -48,21 +58,22 @@
           id="toggle-btn"
         />
       </button>
+      <!-- cta button  -->
       <a
         href="#"
         class="hidden rounded-[30px] border-none bg-gradient-to-r from-limeGreen to-brightCyan px-10 py-3 font-bold text-white outline-none md:block"
         >Request invite</a
       >
-    </header>
+    </nav>
 
     <!-- hero section starts -->
     <!-- -------------------------------------------------------------- -->
-    <main>
+    <main class="">
       <section
         class="hero-section flex flex-col items-center md:flex-row-reverse md:gap-16 md:pl-[10%]"
       >
         <!-- image box -->
-        <div class="hero-img-box relative overflow-hidden">
+        <div class="hero-img-box relative w-full overflow-hidden">
           <picture class="w-full">
             <source srcset="bg-intro-desktop.svg" media="(min-width: 768px)" />
 
@@ -80,7 +91,7 @@
         </div>
         <!-- hero text box -->
         <div
-          class="hero-text-box -mt-10 flex flex-col items-center px-4 md:items-start"
+          class="hero-text-box -mt-10 flex flex-col items-center px-4 md:mt-0 md:items-start"
         >
           <h1
             class="mb-6 text-center text-4xl text-darkBlue md:text-left md:text-6xl"
@@ -88,7 +99,7 @@
             Next generation digital banking
           </h1>
           <p
-            class="mb-10 text-center text-base text-grayishBlue md:text-left md:text-xl"
+            class="mb-10 text-center text-base text-darkBlue md:text-left md:text-xl md:text-grayishBlue"
           >
             Take your financial life online. Your Easybank account will be a
             one-stop-shop for spending, saving, budgeting, investing, and much

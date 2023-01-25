@@ -1,15 +1,13 @@
 "strict mode";
 
 const hamburger = document.getElementById("toggle-btn");
+const navlinks = document.getElementById("nav-links");
 
 hamburger.addEventListener("click", () => {
-
-  if ((hamburger.getAttribute('src') == "./images/icon-hamburger.svg")) {
+  navlinks.classList.toggle("hidden");
+  if (hamburger.getAttribute("src") == "./images/icon-hamburger.svg") {
     hamburger.src = "./images/icon-close.svg";
-  
-  } else  {
+  } else {
     hamburger.src = "./images/icon-hamburger.svg";
-    
   }
-
 });
