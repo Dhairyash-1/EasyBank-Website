@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Easybank landing page</title>
-    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="main.css" />
     <script src="./js/main.js" defer></script>
   </head>
-  <body>
+  <body class="mx-auto w-full max-w-2xl">
     <!-- navigation menu  -->
     <nav
-      class="relative flex h-16 items-center justify-between px-[6%] md:static"
+      class="relative flex h-16 items-center justify-between bg-white px-[6%] py-4 md:static"
     >
       <!-- navbar logo -->
       <div class="logo">
@@ -61,21 +61,25 @@
       <!-- cta button  -->
       <a
         href="#"
-        class="hidden rounded-[30px] border-none bg-gradient-to-r from-limeGreen to-brightCyan px-10 py-3 font-bold text-white outline-none md:block"
+        class="hidden rounded-[30px] border-none bg-gradient-to-r from-limeGreen to-brightCyan px-9 py-2 font-bold text-white outline-none md:block"
         >Request invite</a
       >
     </nav>
 
     <!-- hero section starts -->
     <!-- -------------------------------------------------------------- -->
-    <main class="">
+    <main class="mx-auto w-full max-w-2xl">
       <section
-        class="hero-section flex flex-col items-center md:flex-row-reverse md:gap-16 md:pl-[10%]"
+        class="hero-section flex flex-col items-center bg-veryLightGaray md:mt-16 md:flex-row-reverse md:gap-16 md:pl-[10%]"
       >
         <!-- image box -->
         <div class="hero-img-box relative w-full overflow-hidden">
           <picture class="w-full">
-            <source srcset="bg-intro-desktop.svg" media="(min-width: 768px)" />
+            <source
+              srcset="bg-intro-desktop.svg"
+              media="(min-width: 768px)"
+              class="w-full"
+            />
 
             <img
               src="./images/bg-intro-mobile.svg"
@@ -85,7 +89,7 @@
           </picture>
           <img
             src="./images/image-mockups.png"
-            class="absolute top-[-31.5%] right-0"
+            class="absolute top-[-31.5%] right-0 md:right-[-7rem]"
             alt="mobile-mockup"
           />
         </div>
